@@ -1,10 +1,8 @@
 // plik scripts.js
 
+function drawTree(levels) {
 
-
-function rysujChoinke (j) {
-
-	for (var i=0; i<=j; i++) {
+	for (var i=0; i<=levels; i++) {
 		var star = "";
 		for (var n=0; n<i*2-1; n++) {
 			star += "*";
@@ -12,4 +10,4 @@ function rysujChoinke (j) {
 		console.log(star);
 	}
 }
-rysujChoinke(5);
+drawTree(5);
